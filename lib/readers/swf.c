@@ -351,7 +351,8 @@ static map16_t* extractDefinitions(SWF*swf)
 	}
 	else if(tag->id == ST_DEFINESHAPE ||
 		tag->id == ST_DEFINESHAPE2 ||
-		tag->id == ST_DEFINESHAPE3) {
+		tag->id == ST_DEFINESHAPE3 ||
+        tag->id == ST_DEFINESHAPE4) {
 	    character_t*c = rfx_calloc(sizeof(character_t));
 	    c->tag = tag;
 	    c->type = TYPE_SHAPE;
